@@ -30,11 +30,11 @@ To model a percolation system, create a data type Percolation with the following
 
 "public class Percolation:"
 
--public Percolation(int N)              // create N-by-N grid, with all sites blocked
--public void open(int i, int j)         // open site (row i, column j) if it is not already
--public boolean isOpen(int i, int j)    // is site (row i, column j) open?
--public boolean isFull(int i, int j)    // is site (row i, column j) full?
--public boolean percolates()            // does the system percolate?
+- public Percolation(int N)              // create N-by-N grid, with all sites blocked
+- public void open(int i, int j)         // open site (row i, column j) if it is not already
+- public boolean isOpen(int i, int j)    // is site (row i, column j) open?
+- public boolean isFull(int i, int j)    // is site (row i, column j) full?
+- public boolean percolates()            // does the system percolate?
 
 Use the union-find data structure (as described and implemented in lecture) to efficiently implement the Percolation data type. 
 By convention, the indices i and j are integers between 1 and N, where (1, 1) is the upper-left site. Throw a java.lang.IndexOutOfBoundsException if either i or j is outside this range.
@@ -44,18 +44,18 @@ Monte Carlo Simulation
 
 To estimate the percolation threshold, consider the following computational experiment:
 
--Initialize all sites to be blocked.
--Repeat the following until the system percolates:
--Choose a site (row i, column j) uniformly at random among all blocked sites.
--Open the site (row i, column j).
--The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold.
+- Initialize all sites to be blocked.
+- Repeat the following until the system percolates:
+- Choose a site (row i, column j) uniformly at random among all blocked sites.
+- Open the site (row i, column j).
+- The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold.
 
 Deliverables
 ------------
 
 Submit the following files through the CSC Department website:
 
--Percolation.java (using the weighted quick-union algorithm as implemented in the WeightedQuickUnionUF class)
--PercolationStats.java
--A readme.txt file, answering all questions. 
--PercolationStats.doc A project report, including listings of the above files and sample runs and screenshots from your testing. 
+- Percolation.java (using the weighted quick-union algorithm as implemented in the WeightedQuickUnionUF class)
+- PercolationStats.java
+- A readme.txt file, answering all questions. 
+- PercolationStats.doc A project report, including listings of the above files and sample runs and screenshots from your testing. 
